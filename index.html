@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="./assert/img/slider/slider3.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assert/css/main.css">
+    <link rel="stylesheet" href="./assert/css/responsive.css">    
+    <link rel="stylesheet" href="./assert/theme-icon/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <!-- BEGIN NAV -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Band">Band</a></li>
+                <li><a href="#Tour">Tour</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="down-icon ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- END NAV -->
+            <!-- Begin Search -->
+            <div class="search">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <!-- End Search -->
+        </div>
+
+        <div id="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="https://www.w3schools.com/w3images/chicago.jpg" alt="#" class="imagine">
+                    <!-- <div class="text-content">
+                        <div class="text-content-header">Hà Nội</div>
+                        <div class="text-content-bot">Thank you, Hà Nội - A night we won't forget.</div>
+                    </div> -->
+                </div>
+
+                <div class="slide">
+                    <img src="https://www.w3schools.com/w3images/la.jpg" alt="#" class="imagine">
+                    <!-- <div class="text-content">
+                        <div class="text-content-header">Đà Nẵng</div>
+                        <div class="text-content-bot">Where I want to spend all my life staying...</div>
+                    </div> -->
+                </div>
+
+                <div class="slide">
+                    <img src="https://www.w3schools.com/w3images/ny.jpg" alt="#" class="imagine">
+                    <!-- <div class="text-content">
+                        <div class="text-content-header">Hải Phòng</div>
+                        <div class="text-content-bot">Người ở đây không ngán một ai =))))</div>
+                    </div> -->
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <script>
+            var counter =1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter>3){
+                    counter=1;
+                }
+            }, 4000)
+        </script>
+
+        <div id="content">
+            <div id="Band" class="content-section">
+                <!-- The Band -->
+                <h2 class="section-heading">THE BAND</h2>
+                
+                <p class="section-slogan">We love music</p>
+                
+                <p class="about-section">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                <div class="team-section">
+
+                    <div class="section-third">
+                        <div style="height: 350px;" class="Member-img"></div>
+                        <p class="Name-member Name-memberTur">Nguyễn Văn Trường <i style="margin-left: 15px;" class="ti-arrow-right"></i></p> 
+                    </div>
+
+                    <div class="section-third">
+                        <p class="Name-member Name-memberT">Tạ Quang Toàn <i style="margin-left: 15px;" class="point ti-arrow-down"></i></p>
+                        
+                        <img class="Member-img"  src="./assert/img/Member/Team.jpg" alt="Toàn Nè!">
+                    </div>
+
+                    <div class="section-third">
+                        <div style="height: 200px;" class="Member-img"></div>
+                        <p style="margin-top: 80px;" class="Name-member Name-memberQ"> <i style="margin-right: 15px;" class="point ti-arrow-left"></i> Nguyễn Mạnh Quốc</p>
+                    </div>
+
+                    <div class="section-third">
+                        <div style="height: 80px;" class="Member-img"></div>
+                        <p style="margin-bottom: 50px;" class="Name-member Name-memberTur"> <i style="margin-right: 15px;" class="point ti-arrow-left"></i> Nguyễn Trung Tuấn</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!--Tour Dates  -->
+            <div id="Tour" class="tour-dates">
+                <div class="content-section">
+                    <h2 class="section-heading">TOUR DATES</h2>
+                    <p class="section-slogan">Remember to book your tickets!</p>
+    
+                    <ul class="time-ticket">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="ticket-quantity">3</span></li>
+                    </ul>
+
+                    <div class="place-tickets">
+                        <div class="place">
+                            <img src="./assert/img/Member/Công Nghệ.jpg" alt="" class="place-img">
+                            <div class="place-container">
+                                <b class="container-heading">Đại Học Công Nghệ</b>
+                                <p style="margin-top: 33px;" class="container-time">Sun 21 Nov 2021</p>
+                                <p class="container-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="container-buy js-container-buy">Buy Tickets</button>
+                            </div>
+                        </div>
+    
+                        <div class="place">
+                            <img src="./assert/img/Member/Bưu Chính.jpg" alt="" class="place-img">
+                            <div class="place-container">
+                                <b class="container-heading">Học Viện Công Nghệ Bưu Chính Viễn Thông</b>
+                                <p class="container-time">Sun 21 Nov 2021</p>
+                                <p class="container-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="container-buy js-container-buy">Buy Tickets</button>
+                            </div>
+                        </div>
+    
+                        <div class="place">
+                            <img src="./assert/img/Member/Thương mại.jpg" alt="" class="place-img">
+                            <div class="place-container">
+                                <b class="container-heading">Đại Học Thương Mại</b>
+                                <p style="margin-top: 33px;" class="container-time">Sun 21 Nov 2021</p>
+                                <p class="container-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="container-buy js-container-buy">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-slogan">Fan? Drop a note!</p>
+                <div class="contact-container">
+                    <div class="container-left section-second">
+                        <b><i class="ti-location-pin"></i> Tạ Quang Toàn, Handsome</b><br>
+                        <b><i class="ti-mobile"></i> Phone: +00 ,8888</b><br>
+                        <b><i class="ti-email"></i> Email: Toanta0326@mail.com</b><br>
+                    </div>
+
+                    <form class="container-right section-second">
+                        <input placeholder="Name" type="text" required id="" class="CTR-Name border section-second">
+                        <input placeholder="Email" type="email" required id="" class="CTR-Mail border section-second">
+                        <input placeholder="Message" type="text" required id="" class="CTR-Message border">
+                        <input type="submit" class="submit-button" value="SEND">
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="map-section">
+                <img src="./assert/img/Member/map.jpg" alt="Đảk Đảk">
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/toan.ta.0326/" class="ti-facebook"></a>
+                <a href="https://www.instagram.com/toan0326/" class="ti-instagram"></a>
+                <a href="https://www.youtube.com/channel/UCpXEKIiO7HHLUqUU2qEAvwA" class="ti-youtube"></a>
+                <a href="/assert/img/Member/pew.jpg" class="ti-pinterest"></a>
+                <a href="/assert/img/Member/pew.jpg" class="ti-microsoft-alt"></a>
+                <a href="/assert/img/Member/pew.jpg" class="ti-twitter"></a>
+            </div>
+
+            <p>Power By <a href="https://www.facebook.com/toan.ta.0326/">TQT</a></p>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header"><i class="ti-bag"></i> Tickets</div>
+            <form class="modal-body">
+                <p class="modal-text"><i class="ti-shopping-cart"></i> Tickets, $15 per person</p>
+                <input type="text" required class="modal-input" placeholder="How Many?">
+                <p class="modal-text"><i class="ti-user"></i> Send To</p>
+                <input type="email" required class="modal-input" placeholder="Enter Email...">
+                <button class="modal-pay">Pay <i class="ti-check"></i></button>
+            </form>
+            <div class="modal-footer">Need <a href="/assert/img/Member/pew.jpg" class="modal-end">help?</a></div>
+        </div>
+    </div>
+
+    <script src="./assert/js/event.js"> </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.modal{
+    background-color: rgba(0,0 ,0 ,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: showmodal ease .5s;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal .modal-container{
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    font-size: 15px;
+}
+
+.modal .modal-close{
+    position: absolute;
+    right: 0;
+    padding: 16px 16px;
+    color: #fff;
+}
+
+.modal .modal-header{
+    height: 160px;
+    padding: 32px 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #009688;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 8px;
+}
+
+.modal .modal-body{
+    padding: 0.15px 16px;
+}
+
+.modal .modal-text{
+    margin-top: 10px;
+}
+
+.modal .modal-input{
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modal .modal-pay{
+    color: #fff;
+    background-color: #009688;
+    width: 100%;
+    margin: 0 0 16px;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.modal .modal-pay:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.modal .modal-footer{
+    text-align: right;
+    padding: 8px;
+}
+
+.modal .modal-end{
+    color:skyblue;
+}
+
+@keyframes showmodal {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
